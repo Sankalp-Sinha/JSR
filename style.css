@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.bg{
+    display: flex;
+    background-image: url("bgimg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 720px;
+    background-size: 100%;
+    position: relative;
+    opacity: 80%;
+    top: 0;
+    left: 0;
+    padding: 20px 100px;
+    justify-content: end;
+    /* align-items:center; */
+    z-index: 99;
+}
+
+.bg a{
+    position: relative;
+    font-size: 2rem;
+    color: aqua;
+    text-decoration: none;
+    font-weight: bolder;
+    margin-left: 150px;
+
+}
+
+.bg a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 34px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.bg a:hover::after{
+    transform: scaleX(1);
+}
+
+
+.separation {
+    height: 7px;
+    background-color: rgb(228, 202, 202);
+    position: relative;
+    z-index: 20;
+}
+
+
+.box1{
+    height: 550px;
+}
+
+.box2{
+    height: 600px;
+    display: flex;
+    color: whitesmoke;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+.box3{
+    height: 600px;
+}
+.box4{
+    height: 600px;
+}
+.box5{
+    height: 600px;
+}
+
+.box1 img{
+   padding: 30px 140px;
+   zoom: 1.2;
+    
+}
+
+.box1 img:hover{
+    transform: scale(1.2);
+    transition: 1s ease-in-out;
+}
+
+.box2 video{
+    padding: 30px 140px;
+    height: 100x;
+    width: 500px;
+}
+.box3 img{
+    height: 400px;
+}
+
+.second{
+    
+    margin-left: 90px;
+    position: relative;
+}
+
+.second img{
+    width: 555px;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.second video{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 30rem;
+    padding: 30px;
+    height: 335px;
+}
+
+.second img:hover{
+    transform: scale(1.122);
+    transition: 1s ease-in-out;
+
+    /* transition: 1s ease-in-out; */
+}
+
+
