@@ -7,12 +7,16 @@ body{
     background-color: black;
 }
 
+
+.main{
+    height: 90vh;
+}
 .bg{
     display: flex;
     background-image: url("bgimg.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    height: 720px;
+    height: 90vh;
     background-size: 100%;
     position: relative;
     opacity: 80%;
