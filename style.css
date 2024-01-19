@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,37 +7,93 @@
 
 body{
     background-color: black;
+    font-family: "Poppins", sans-serif;
 }
 
 
 .main{
-    height: 90vh;
-}
-.bg{
-    display: flex;
-    background-image: url("bgimg.jpg");
+    height: 100vh;
+    background-image: url("bgimgg.jpg");
     background-repeat: no-repeat;
     background-position: center center;
-    height: 90vh;
     background-size: 100%;
-    position: relative;
-    opacity: 80%;
+    height: 100vh;
+    width: 80%;
+}
+
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.heading{
+    font-size: 0px;
+    animation: increaseSize 3s forwards;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
+    align-items: end;
+    padding-top: 200px;
+    padding-left: 220px;
+    text-shadow: 5px 5px 100px rgb(255, 0, 0), 0 0 1em rgb(255, 0, 0), 0 0 0.2em rgb(255, 0, 0);
+}
+
+@keyframes increaseSize {
+    from {
+      font-size: 0px;
+    }
+    to {
+      font-size: 40px; /* Adjust the final font size as needed */
+    }
+  }
+
+.navigation{
+    display: flex;
     top: 0;
     left: 0;
-    padding: 20px 100px;
-    justify-content: end;
-    /* align-items:center; */
+    padding: 40px 28px ;
+    margin: -20px 0px;
+    margin-left: 100px;
+    justify-content: space-evenly;
     z-index: 99;
+}
+.ss{
+    margin: 0px 50px;
+
+}
+
+.btn{
+    margin: 25px 420px;
+    padding: 5px 8px;
+    border-radius: 50px;
+    width: 100px;
+    height: 50px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(244, 244, 158);
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(255, 174, 0); 
 }
 
 .bg a{
     position: relative;
-    font-size: 2rem;
-    color: aqua;
+    font-size: 1.5rem;
+    color: burlywood;
     text-decoration: none;
-    font-weight: bolder;
-    margin-left: 150px;
-
+    font-weight: 500;
+    margin-left: 100px;
+    
+}
+.bg a:hover{
+    transition: 0.5s ease-in;
+    transform: scale(1.1);
 }
 
 .bg a::after{
@@ -45,14 +103,14 @@ body{
     top: 34px;
     width: 100%;
     height: 3px;
-    background: black;
+    background: orange;
     border-radius: 5px;
     transform: scaleX(0);
     transition: transform .5s;
 }
 
 .bg a:hover::after{
-    transform: scaleX(1);
+    transform: scaleX(1.2);
 }
 
 
@@ -65,31 +123,94 @@ body{
 
 
 .box1{
-    height: 550px;
+    height: 645px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .box2{
     height: 600px;
     display: flex;
     color: whitesmoke;
-    justify-content: center;
+    justify-content: space-evenly;
     max-width: 70vw;
     margin: auto;
     color: white;
     align-items: center;
 }
+
+.text{
+    padding: px;
+    margin-right:-20px;
+    margin-left: -100px;
+}
+
+.text1{
+    font-size: x-large;
+    padding-left: 20px;
+    padding-right: 150px;
+    text-align: center;
+    color: wheat;
+    
+}
+
+.text2{
+    font-size: x-large;
+    padding-right: 1px;
+    text-align: center;
+}
+
 .box3{
     height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .box4{
     height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text4{
+    color: white;
+    font-size: x-large;
+    padding-left: 100px;
+    padding-right: 0px;
+    text-align: center;
 }
 .box5{
     height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.box5 img{
+    height: 57vh;
+    padding: 180px;
+}
+.box3 img{
+    height: 57vh;
+    padding: 180px;
+}
+
+
+.box5 img:hover{
+    transform: scale(1.2);
+    transition: 1s ease-in-out;
+}
+.box3 img:hover{
+    transform: scale(1.2);
+    transition: 1s ease-in-out;
+}
+
+
 .box1 img{
-   padding: 30px 140px;
+   padding: 100px 120px;
    zoom: 1.2;
     
 }
@@ -109,7 +230,7 @@ body{
 }
 
 .second{
-    
+    padding: 10px 20px;
     margin-left: 90px;
     position: relative;
 }
@@ -126,15 +247,137 @@ body{
     top: 0px;
     right: 0px;
     width: 30rem;
-    padding: 30px;
+    padding: 50px;
     height: 335px;
 }
 
 .second img:hover{
     transform: scale(1.122);
     transition: 1s ease-in-out;
+}
 
-    /* transition: 1s ease-in-out; */
+
+
+.fourth{
+    padding: 0px;
+    margin: 200px;
+    margin-left: 90px;
+    position: relative;
+}
+
+.fourth img{
+    width: 555px;
+    position: relative;
+    z-index: 1;
+    transition: 0.5s ease-in-out;
+}
+
+.fourth video{
+    position: absolute;
+    top: -68px;
+    right: 4px;
+    width: 30rem;
+    padding: 50px;
+    height: 450px;
+}
+
+.fourth img:hover{
+    transform: scale(1.122);
+    transition: 1s ease-in-out;
+}
+
+.text5{
+    font-size: x-large;
+    padding-left: 5px;
+    padding-right: 110px;
+    text-align: center;
+    color: wheat;
+    
+}
+
+.text3{
+    font-size: x-large;
+    padding-left: 5px;
+    padding-right: 110px;
+    text-align: center;
+    color: wheat;
+    
+}
+
+.footer{
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.b1{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.b1 p{
+    margin-bottom: 10px;
+}
+.abc{
+    margin-top: 15px;
+}
+
+
+.b1 h1{
+    margin-bottom: 5px;
+}
+
+.b2{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.b2 h1{
+    margin-bottom: 5px;
+}
+
+.b2 p{
+    margin-bottom: 10px;
+}
+.acb{
+    margin-top: 15px;
+}
+
+.b3{
+    display: flex;
+    justify-content:end;
+    flex-direction: column;
+    color: white;
+}
+.b3 h1{
+    margin-bottom: 5px;
+}
+
+.b3 p{
+    margin-bottom: 10px;
+}
+
+.b4{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.add-icon{
+    margin-top: 10px;
+    display: flex;
+}
+
+.add-second{
+    color: white;
+}
+
+.b3 .add-icon i {
+    font-size: 1.5em;
+    margin-right: 10px;
 }
 
 
