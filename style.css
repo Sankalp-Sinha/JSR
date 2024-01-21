@@ -46,7 +46,7 @@ body{
       font-size: 0px;
     }
     to {
-      font-size: 40px; /* Adjust the final font size as needed */
+      font-size: 40px;
     }
   }
 
@@ -54,32 +54,33 @@ body{
     display: flex;
     top: 0;
     left: 0;
-    padding: 40px 28px ;
+    padding: 40px 100px ;
     margin: -20px 0px;
     margin-left: 100px;
     justify-content: space-evenly;
     z-index: 99;
 }
 .ss{
-    margin: 0px 50px;
-
+    padding: 5px;
+    padding-right: 140px;
 }
 
 .btn{
-    margin: 25px 420px;
+    margin: 20px 400px;
     padding: 5px 8px;
     border-radius: 50px;
-    width: 100px;
-    height: 50px;
-    color: rgb(0, 0, 0);
-    background-color: rgb(244, 244, 158);
-    font-size: x-large;
-    font-weight: bold;
+    width: 90px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    background-color: grey;
+    font-size: large;
+    font-weight: 600;
     cursor: pointer;
 }
 
 .btn:hover{
-    background-color: rgb(255, 174, 0); 
+    background-color: rgb(255, 174, 0);
+    color: black; 
 }
 
 .bg a{
@@ -152,7 +153,6 @@ body{
     padding-right: 150px;
     text-align: center;
     color: wheat;
-    
 }
 
 .text2{
@@ -323,8 +323,6 @@ body{
 .abc{
     margin-top: 15px;
 }
-
-
 .b1 h1{
     margin-bottom: 5px;
 }
@@ -351,6 +349,7 @@ body{
     justify-content:end;
     flex-direction: column;
     color: white;
+    padding-bottom: 80px;
 }
 .b3 h1{
     margin-bottom: 5px;
@@ -358,12 +357,6 @@ body{
 
 .b3 p{
     margin-bottom: 10px;
-}
-
-.b4{
-    display: flex;
-    flex-direction: column;
-    color: white;
 }
 
 .add-icon{
@@ -379,5 +372,101 @@ body{
     font-size: 1.5em;
     margin-right: 10px;
 }
+
+.box6{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 84vh;
+}
+
+.card{
+    border-color: 5px solid red;
+    background-color:white;
+    width: 17vw;
+    height: 62vh;
+    border-radius: 7px;   
+}
+
+.image{
+    padding: 5px;            
+}
+
+.image img{
+    border-radius: 7px;
+}
+.content{
+    padding: 7px 13px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.content h2{
+    color: black;
+    padding: 0px 30px 5px ;
+}
+.content p{
+    font-size: 13px;
+    color: black;
+}
+.capsules{
+    padding:0px 30px 1 35px ;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.capsules span{
+    border: 1px solid grey;
+    padding: 2px 10px;
+    border-radius: 11px;
+    font-size: 12px;
+    font-family: "Poppins";
+    color: grey;
+    border-color: black;
+}
+.button{
+    text-align: center;
+}
+.button button{
+    padding: 3px;
+    width: 70px;
+    border-radius: 7px;
+    background-color: aqua;
+    text-align: center;
+    cursor: pointer;
+}
+.button button:hover{
+    background-color: burlywood;
+}
+.card:hover{
+    transform: scale(1.15);
+    transition: 1s ease-in-out;
+    box-shadow: 0 0 20px orange, 0 0 40px orange, 0 0 60px orange;
+}
+.c1{
+    padding: 0px 20px 0px 10px;
+}
+.bb1 h2{
+    margin-left: 20px;
+}
+.bb2 h2{
+    margin-left: 10px;
+}
+.c3{
+    padding: 0px 20px;
+}
+.b4{
+    padding: 0px 23px 147px;
+}
+.b4 h1{
+    padding-left: 40px;
+}
+.b4 i{
+    margin-top: 10px;
+    padding: 10px;
+    gap: 3px;
+    justify-content: space-evenly;
+}
+
 
 
